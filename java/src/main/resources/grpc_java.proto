@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+//package exampleapp; ->not sure if needed
+option java_generic_services = true;
+option java_multiple_files = true;
+option optimize_for = SPEED;
+//option java_package = "grpc";
+//option java_outer_classname = "";
+
+message Technology {
+  string tech = 1;
+}
+
+service TechnologyCall {
+  rpc CallTechnology(Technology) returns (Technology){}
+}
+
