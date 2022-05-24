@@ -1,5 +1,8 @@
 Scenario:
-service java0 is calling service java1. Both the services are running as different dockers.  
+service java0 is calling service java1. Both the services are running as different dockers.
+
+Endpoint executed to collect the logs:
+curl -kv http://localhost:8080/
 
 Logs:
 
